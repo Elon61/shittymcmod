@@ -17,9 +17,4 @@ public class FancyBlock extends BaseBlock{
         setHardness(12.0F);
         setSoundType(SoundType.CLOTH);
     }
-
-    @SideOnly(Side.CLIENT)
-    public void initModel() {
-        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
-    }
 }

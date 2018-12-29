@@ -20,22 +20,19 @@ public class ExampleBlocks {
     public static void register(IForgeRegistry<Block> registry) {
         registry.registerAll(
                 basicAF
-                //fancyBlock2
         );
     }
 
     public static void registerItemBlocks(IForgeRegistry<Item> registry) {
         registry.registerAll(
                 basicAF.createItemBlock()
-                //fancyBlock2.createItemBlock()
         );
     }
 
     public static void registerModels() {
         basicAF.registerItemModel(Item.getItemFromBlock(basicAF));
         fancyBlock.initModel();
-        fancyBlock.registerItemModel(Item.getItemFromBlock(fancyBlock));
-        //fancyBlock2.registerItemModel(Item.getItemFromBlock(fancyBlock2));
+        //fancyBlock.registerItemModel(Item.getItemFromBlock(fancyBlock));
     }
 }
 
